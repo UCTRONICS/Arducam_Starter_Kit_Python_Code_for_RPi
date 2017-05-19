@@ -12,14 +12,14 @@ def setup():
 		GPIO.output(pin, GPIO.LOW)
 
 def writeOneByte(val):
-	GPIO.output(11, val & (0xfe)  
-	GPIO.output(12, val & (0xfd)  
-	GPIO.output(13, val & (0xfb)  
-	GPIO.output(15, val & (0xf7)  
-	GPIO.output(16, val & (0xef)  
-	GPIO.output(18, val & (0xdf)  
-	GPIO.output(22, val & (0xbf)  
-	GPIO.output(7,  val & (0x7f) 
+	GPIO.output(11, val & 0xfe)  
+	GPIO.output(12, val & 0xfd)  
+	GPIO.output(13, val & 0xfb)  
+	GPIO.output(15, val & 0xf7)  
+	GPIO.output(16, val & 0xef)  
+	GPIO.output(18, val & 0xdf)  
+	GPIO.output(22, val & 0xbf)  
+	GPIO.output(7,  val & 0x7f) 
 
 def loop():
 	while True:
